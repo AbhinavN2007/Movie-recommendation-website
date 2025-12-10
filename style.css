@@ -1,0 +1,28 @@
+
+.navbar-brand {
+    transition: color 0.2s ease;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: large;
+    align-items: center !important;
+}
+
+.navbar-brand:hover {
+    color: #022456 !important; 
+}
+.main-input{
+    width: 500px;
+}
+body{
+    background-color: #1e2129;
+}
+.output-group{
+    
+    display:block !important;
+    visibility: visible !important;
+    color:antiquewhite;
+}
+h2{
+    font-family:'Roboto',sans-serif;
+
+}
