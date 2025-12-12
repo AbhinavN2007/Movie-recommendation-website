@@ -37,23 +37,14 @@
 
     <div class="input-group mt-5">
         
-        <input type="text" class="form-control" id="main-input" placeholder="Search for movies or series...">
-        <button onclick="mainSearch()" class="btn btn-secondary" type="button" id="search-button">
+        <input type="text" class="form-control" id="smart-input" placeholder="What are you in the mood for...?">
+        <button onclick="smartSearch()" class="btn btn-secondary" type="button" id="search-button">
             <i class="bi bi-search"></i>
             </button>
     </div> 
     <div class="output-group">
+        <div class="text-center mt-5"><p id="smart-rec-title"></p></div>
         
-        <div class="container my-5">
-            <div class="row align-items-center">
-                <div class="col-md-4 mb-4">
-                    <img src="" alt="Image" id="output-image" style="display:none;" class="img-fluid rounded">
-                </div>
-                <div class="col-md-8">
-                    <p id="output" class="shadow"></p>
-                </div>
-            </div>
-         </div>
          <div class="container my-3">
             <div class="row align-items-center">
                 <div class="md-12">
@@ -79,14 +70,11 @@
 
          </div>
     </div>
-    <div class="mt-2 text-center">
-        <p>Unsure of the movie you want to look up? Try our Smart Search feature.</p>
-        <a href="smartsearch.html"><button class="btn btn-primary rounded-pill">Smart Search</button></a>
-    </div>
+    
     </body> 
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
-</html> 
+</html>

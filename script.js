@@ -66,6 +66,8 @@ async function fetchData(movieinput) {
 async function fetchRecData(i,movieTitle){
     const outputElement1=document.getElementById(`rec-img${i}`)
     const outputElement2=document.getElementById(`rec-name${i}`)
+    const anchortag=document.getElementById(`reca-name${i}`)
+
     const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movieTitle)}&apikey=${OMDB_KEY}`;
     fetch(apiUrl)
     .then(response=>response.json())
@@ -74,7 +76,45 @@ async function fetchRecData(i,movieTitle){
         outputElement1.alt="Image Unavailable"
         outputElement1.style="display:block;"
         outputElement2.innerHTML=data.Title
+        anchortag.href=`redirected.html?item=${data.Title}`
 
     })
 
 }
+
+function redirectedPage(){
+    const urlParams= new URLSearchParams(window.location.search);
+    const newMovie=urlParams.get('item');
+    fetchData(newMovie);
+}
+
+if (new URLSearchParams(window.location.search).has('item')) {
+    redirectedPage();   
+}
+
+async function smartSearch(){
+
+    const inputElement=document.getElementById('smart-input');
+    const inputPrompt=inputElement.value;
+    const prompt=`I will give you a prompt, recommend four movies or series based on the prompt i give you.The response should be a simple string with no extra text but the sequence of movie or series names separated by a single |. Here is the prompt ${inputPrompt}`;
+    try{
+        document.getElementById('smart-rec-title').innerHTML='Here are some movies you might like based on your search.';
+        const geminiResponse=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_KEY}`,{
+                method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:prompt}]}]})});
+                const recData=await geminiResponse.json();
+                const recString=recData.candidates[0].content.parts[0].text;
+                const recArray=recString.split('|')
+                console.log(recArray)
+                
+                for(let i=0;i<4;i++){
+                    fetchRecData(i,recArray[i])
+                }
+            
+        }        
+    catch(error){
+                console.error('Error:', error);
+            }
+        }
+    
+
+
