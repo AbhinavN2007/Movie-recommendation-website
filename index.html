@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">         <!--fonts used in doc-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -17,19 +17,17 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--Navigation bar with three elements-->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">RecFlix</a>
 
             <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">About</a>
+                    <a class="nav-link px-2" href="about.html">About</a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Movies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Series</a>
+                    <a class="nav-link px-2" href="trending.html">Trending</a>
                 </li>
             </ul>
         </div>
@@ -37,14 +35,14 @@
 
     <div class="input-group mt-5">
         
-        <input type="text" class="form-control" id="main-input" placeholder="Search for movies or series...">
+        <input type="text" class="form-control" id="main-input" placeholder="Search for movies or series..."> <!--Uses OMDB api to fetch data using mainsearch function-->
         <button onclick="mainSearch()" class="btn btn-secondary" type="button" id="search-button">
             <i class="bi bi-search"></i>
             </button>
     </div> 
     <div class="output-group">
         
-        <div class="container my-5">
+        <div class="container my-5">            <!--Setting up a flexbox container to output results side by side with suffficient padding.-->
             <div class="row align-items-center">
                 <div class="col-md-4 mb-4">
                     <img src="" alt="Image" id="output-image" style="display:none;" class="img-fluid rounded">
@@ -54,7 +52,7 @@
                 </div>
             </div>
          </div>
-         <div class="container my-3">
+         <div class="container my-3">           <!--Another flexbox container for similar movies(4 columns of equal width) names fetched using gemini, data and images using OMDB-->
             <div class="row align-items-center">
                 <div class="md-12">
                     <h4 id="Rec_Title"></h4>
@@ -79,7 +77,7 @@
 
          </div>
     </div>
-    <div class="mt-2 text-center">
+    <div class="mt-2 text-center general-text"><!--Smart Search to redirect to SMart search page-->
         <p>Unsure of the movie you want to look up? Try our Smart Search feature.</p>
         <a href="smartsearch.html"><button class="btn btn-primary rounded-pill">Smart Search</button></a>
     </div>

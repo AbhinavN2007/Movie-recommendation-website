@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="config.js"></script>
+    <script src="script.js" defer></script>
+    <title>RecFlix</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">RecFlix</a>
+
+            <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="about.html">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="trending.html">Trending</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Trending movies fetched from TMDB-->
+    <!--Setting up two flex box rows each row having four columns, each cell containing one movie.-->
+    <div class="container my-3">
+    <div class="row align-items-center">
+        <div class="md-12">
+            <h4 id="trending-title"></h4>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name0"><img id="tr-img0" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name0"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name1"><img id="tr-img1" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name1"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name2"><img id="tr-img2" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name2"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name3"><img id="tr-img3" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name3"></p>
+        </div>
+        <div class="row align-items-center">
+        <div class="col-md-3">
+            <a href="" id="tra-name4"><img id="tr-img4" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name4"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name5"><img id="tr-img5" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name5"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name6"><img id="tr-img6" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name6"></p>
+        </div>
+        <div class="col-md-3">
+            <a href="" id="tra-name7"><img id="tr-img7" src="" style="display:none;" alt="" class="img-fluid rounded-3 pop-out-image"></a>
+            <p id="tr-name7"></p>
+        </div>
+    </div>
+    
+    </div>
+
+    </body> 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html> 

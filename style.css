@@ -15,7 +15,8 @@
 }
 body{
     background-color: #1e2129;
-    color:antiquewhite;
+    color: antiquewhite;
+    
 }
 .output-group{
     
@@ -25,11 +26,18 @@ body{
 }
 h2{
     font-family:'Roboto',sans-serif;
-
 }
+
+
 .pop-out-image:hover {
     transform: scale(1.1);
 }
 .pop-out-image:hover{
     box-shadow:0 10px 20px rgba(6, 6, 239, 0.4);
+}
+.general-text{
+    color:antiquewhite;
+}
+.about-group{
+    color:rgb(157, 137, 137) !important;
 }
