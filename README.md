@@ -5,7 +5,7 @@ RecFlix is a movie recommendation website designed to help users find the perfec
 ## Features
 
 - **Search Functionality**: Users can search for movies or series using the main search bar.The core basic functionality upon which the rest of the website is built.
-- **Trending Movies**: Displays a list of trending movies as fetched from the TMDB API. This is a common feature on all movie websites so I wanted to implement the same here.ALso acts a starting point if you have no ideaa what you are in the mood for.
+- **Trending Movies**: Displays a list of trending movies as fetched from the TMDB API. This is a common feature on all movie websites so I wanted to implement the same here. Also acts a starting point if you have no idea what you are in the mood for.
 - **Smart Search**: An AI powered feature that recommends movies based on user mood or input. Not everyone knows the exact movie name they want to look up, so this acts as a starting point.
 
   Upon clicking on movies fetched using any one of the above methods, we get data regarding that movie as well as similar movies.
