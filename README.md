@@ -12,7 +12,7 @@ RecFlix is a movie recommendation website designed to help users find the perfec
 
 ## Software used:
 
--HTML,CSS for the main structure of the webpage. Used Bootstrap libraries to simplify the structure. Used simply Javascript for logic.
+- HTML,CSS for the main structure of the webpage. Used Bootstrap libraries to simplify the structure. Used simply Javascript for logic.
 - APIs:
   - OMDB API for movie details. OMDB had better and wide variety of details for each individual movie, so it was used whenever i wanted to fetch data on any movie in particular.
   - TMDB API used only for the list of trending movies.(this was the only free website which had trending movies as an api call)
