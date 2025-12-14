@@ -66,3 +66,6 @@ RecFlix is a movie recommendation website designed to help users find the perfec
 
 The gemnini api key has a low rate limit for requests (10 per minute) so do not rapidly click on different movies. Use the the RecFlix title as a home button instead of using the previous page feature of google.
 If rate limit  is reached (Error:429 on console), generate a new key.
+
+Project on github:
+https://github.com/AbhinavN2007/Movie-recommendation-website
