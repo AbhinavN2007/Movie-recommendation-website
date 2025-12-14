@@ -55,10 +55,10 @@ RecFlix is a movie recommendation website designed to help users find the perfec
 
    Replace the placeholders in config.js with your own API keys.
    
-   Gemini API key can be generated here: aistudio.google.com
-   OMDB API key can be generated here: omdbapi.com
-   TMDB API key can be generated here: developer.themoviedb.org
-   All of the above require you to create a free account.
+   - Gemini API key can be generated here: aistudio.google.com
+   - OMDB API key can be generated here: omdbapi.com
+   - TMDB API key can be generated here: developer.themoviedb.org
+   - All of the above require you to create a free account.
 
 3. Open index.html on your preferred browser and navigate from there.
 
